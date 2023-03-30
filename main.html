@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href='style/style.css'>
+    <title>Rodina</title>
+</head>
+<body>
+    <div class="container">
+        <div class="construct-container">
+            <div class="construct-block">
+                <section class="slider-wrapper">
+                    <img id="slide-arrow-prev" class="arrow1" src="images/arrow1.png"></button>
+                    <ul class="slides-container" id="slides-container">
+                        <li class="slide"><img class="slides" src="images/11.png"></li>
+                        <li class="slide"><img class="slides"  src="images/12.png"></li>
+                        <li class="slide"><img class="slides"  src="images/13.png"></li>
+                    </ul>
+                    <img id="slide-arrow-next" class="arrow" src="images/arrow1.png">
+                </section>
+            </div>
+            <div class="construct-block">
+                <section class="slider-wrapper">
+                    <img id="slide-arrow-prev1" class="arrow1" src="images/arrow1.png"></button>
+                    <ul class="slides-container" id="slides-container1">
+                        <li class="slide"><img class="slides" src="images/21.png"></li>
+                        <li class="slide"><img class="slides"  src="images/22.png"></li>
+                        <li class="slide"><img class="slides"  src="images/23.png"></li>
+                    </ul>
+                    <img id="slide-arrow-next1" class="arrow" src="images/arrow1.png">
+                </section>
+            </div>
+            <div class="construct-block">
+                <section class="slider-wrapper">
+                    <img id="slide-arrow-prev2" class="arrow1" src="images/arrow1.png"></button>
+                    <ul class="slides-container" id="slides-container2">
+                        <li class="slide"><img class="slides" src="images/31.png"></li>
+                        <li class="slide"><img class="slides"  src="images/32.png"></li>
+                        <li class="slide"><img class="slides"  src="images/33.png"></li>
+                    </ul>
+                    <img id="slide-arrow-next2" class="arrow" src="images/arrow1.png">
+                </section>
+            </div>
+        </div>
+        <div class="main">
+            <div class="title">
+                <a onclick="location.reload()" class="restart">ЗАНОВО</a>
+                <h1 id="soberi">СОБЕРИ□</h1>
+            </div>
+            <div class="content">
+                <div class="desc">
+                    <p>Ты недавно в нашем городе? Пора получить прописку! Слева твой дом, он находится по адресу: Чёрный пр-д.
+
+                        Заполняй карточку и сохраняй.</p>
+                    <input type="button" onclick="passport()" class="save_btn" value="СОХРАНИТЬ  →">
+                </div>
+                <div class="person" onclick="opn()">
+                    <section class='wrapper'>
+                        <img class="arrow1" src="images/arrow1.png">
+                    
+                    <h1>СО<br>
+                        СЕ<br>
+                        ДА<br>
+                    </h1>
+                    <img class="arrow" src="images/arrow1.png">
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="vertical-content">
+            <div class="other">
+                <p onclick="opn()">ДРУГИЕ ДВОРЫ</p>
+            </div>
+            <div class="desc-blue">
+                <div class="carousel">
+                    <img id="image" class="items" src="images/41.png">
+                </div>
+                <img id="arrow2" class="arrow2" src="images/arrow2.png">
+                <img id="arrow3" class="arrow3" src="images/arrow3.png">
+            </div>
+            <div class="desc1">
+                <h2>НОМЕР ДОМА</h2>
+                <textarea id="num" placeholder="Номерок вводится сюда..."></textarea>
+            </div>
+            <div class="desc2">
+                <h2>КОРПУС</h2>
+                <textarea id="corp" placeholder="Номерок..."></textarea>
+                <h2>КВАРТИРА</h2>
+                <textarea id="flat" placeholder="Номерок..."></textarea>
+            </div>
+        </div>
+    </div>
+    <div id='message' class="message">
+        <p>Ооо, нет...<br>Эта кнопка временно не работает!</p>
+        <!-- <p>Эта кнопка временно не работает!</p> -->
+        <span class="close" onclick="cls()">ЗАКРЫТЬ</span>
+    </div>
+    <div id='passport' class="passport">
+        <h1>ТВОИ ДОКУМЕНТИКИ!</h1>
+        <div class="passwrap">
+            <img src="images/passport.png" style="width: 100%;">
+            <div class="pass-text" id="pass-text">Чёрный пр-д, дом ..., <br>
+            корпус ..., кв. ... .</div>
+        </div>
+        
+        <span class="rest" onclick="passport_close()">ЗАНОВО</span>
+    </div>
+    <script defer src="script/hover.js"></script>
+</body>
+</html>

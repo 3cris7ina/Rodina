@@ -1,0 +1,129 @@
+@font-face {
+	font-family: 'NextArtLight';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Next Art'),
+		url('../fonts/NEXTART_Light.otf')
+}
+
+@font-face {
+	font-family: 'Natasha';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Natasha'),
+		url('../fonts/Natasha.ttf')
+}
+
+html ,body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    cursor: default;
+    background-color: #1329E7;
+    font-family: 'NextArtLight';
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.bg{
+    width: 80vw;
+    height: 80vh;
+}
+.bg img{
+    width: 80vw;
+    height: 80vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.start{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 10vh;
+    background-color: #1329E7;
+    outline: #fff solid 1vh;
+    align-content: center;
+    justify-content: center;
+    font-size: 6vmin;
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    cursor: default;
+}
+.inst{
+    position: absolute;
+    left: 10%;
+    bottom: 5%;
+    font-size: 3vmin;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited{
+    color: #fff;
+}
+
+.hse{
+    position: absolute;
+    top: 5%;
+    font-size: 3vmin;
+    cursor: default;
+}
+
+.text{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    margin-bottom: 2vh;
+    font-family: 'Natasha';
+    font-size: 12vmin;
+    fill: #fff;
+    stroke: #1329E7;
+    stroke-width: 1px;
+    stroke-linejoin : round;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: #1329E7 0.6vmin;
+    z-index: 10;
+    cursor: default;
+}
+.text1{
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    margin-bottom: 2vh;
+    font-family: 'Natasha';
+    font-size: 12vmin;
+    fill: #fff;
+    stroke: #1329E7;
+    stroke-width: 1px;
+    stroke-linejoin : round;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: #1329E7 0.6vmin;
+    z-index: 10;
+}
+.text2{
+    position: absolute;
+    top: 44%;
+    left: 30%;
+    margin-bottom: 2vh;
+    font-family: 'Natasha';
+    font-size: 12vmin;
+    fill: #fff;
+    stroke: #1329E7;
+    stroke-width: 1px;
+    stroke-linejoin : round;
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke: #1329E7 0.6vmin;
+    z-index: 10;
+}
